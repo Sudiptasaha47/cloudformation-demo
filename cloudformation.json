@@ -1,0 +1,25 @@
+{
+   "AWSTemplateFormatVersion" : "2010-09-09",
+   "Description" : "Ec2 block device mapping",
+   
+   
+  "AgileDatabaseServer" : {
+         "Type" : "AWS::EC2::Instance",
+         "Properties" : {
+           "ImageId" : "ami-06fcc1f0bc2c8943f",
+             "AvailabilityZone" : "us-east-1a",
+              "InstanceType" : "t2.micro",
+                "KeyName" : "sudipta_kube",
+                  "SecurityGroupIds" : ["sg-0a4e80e72a4029b4b"],
+		  "PrivateIpAddress" : "172.31.23.245",
+                  "SubnetId" : "subnet-2c98694a"
+                  "Tags" : [	
+           		{"Key" : "Name", "Value" : "Cloudformation-server1"},
+				{"Key" : "ServerFor", "Value" : "Cloudformation Demo"}
+            ]
+         }
+      }
+           		  
+        
+   
+}
