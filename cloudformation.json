@@ -7,7 +7,7 @@
 			"Type": "AWS::EC2::Instance",
 			"Properties": {
 				"ImageId": "ami-06fcc1f0bc2c8943f",
-				"AvailabilityZone": "us-w-1a",
+				"AvailabilityZone": "us-west-1c",
 				"InstanceType": "t2.micro",
 				"KeyName": "sudipta_kube",
 				"SecurityGroupIds": ["sg-0a4e80e72a4029b4b"],
